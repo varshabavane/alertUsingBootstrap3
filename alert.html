@@ -10,12 +10,37 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <title>alertUsingBootstrap</title>
+    <script>
+        $(document).ready(function () {
+            $('.btn_hide').click(function () {
+                $('.alert').hide();
+
+            });
+        });
+
+        $(document).ready(function(){
+            $('.btn_show').click(function(){
+                $('.alert').show();
+
+            })
+        })
+
+
+
+
+
+
+    </script>
 </head>
 
 <body>
-    <div class="alert alert-success">
+    <div class="alert alert-success alert-dissmissable" id="alert">
+        <a href="#" class="close" data-dismiss="alert" area-label="close">&times;</a>
         <strong>success</strong>
+
     </div>
+    <button class="btn_hide" onclick="hide()">Hide</button>
+    <button class="btn_show" onclick="show()">show</button>
 
 </body>
 
