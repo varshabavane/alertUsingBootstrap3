@@ -13,14 +13,14 @@
     <script>
         $(document).ready(function () {
             $('.btn_hide').click(function () {
-                $('.alert').hide();
+                $('.alert').hide(1000);
 
             });
         });
 
-        $(document).ready(function(){
-            $('.btn_show').click(function(){
-                $('.alert').show();
+        $(document).ready(function () {
+            $('.btn_show').click(function () {
+                $('.alert').show(1000);
 
             })
         })
@@ -34,7 +34,7 @@
 </head>
 
 <body>
-    <div class="alert alert-success alert-dissmissable" id="alert">
+    <div class="alert alert-success alert-dissmissable text-center" style="width:200px; margin-top:20px; margin-left:20px;" id="alert">
         <a href="#" class="close" data-dismiss="alert" area-label="close">&times;</a>
         <strong>success</strong>
 
