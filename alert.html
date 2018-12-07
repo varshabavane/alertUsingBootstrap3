@@ -22,8 +22,17 @@
             $('.btn_show').click(function () {
                 $('.alert').show(1000);
 
-            })
-        })
+            });
+        });
+
+        // Auto-hide alert box
+        $(document).ready(function () {
+            // show the alert
+            setTimeout(function () {
+                $(".alert").alert('close');
+            }, 3000);
+        });
+
 
 
 
