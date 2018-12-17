@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>alertUsingBootstrap</title>
+    <script>
+        function hide() {
+            // $('.alert').hide();
+            document.getElementById("alert").style.display = "none";
+            // a.hide();
+
+        }
+        function show() {
+            // document.getElementByClassName("alert").show(3000);
+            document.getElementById("alert").style.display = "block";
+
+
+        }
+        function close() {
+            document.getElementById("alert").style.display = "none";
+        }
+
+
+
+
+
+        // $(document).ready(function () {
+        //     $('.btn_hide').click(function () {
+        //         $('.alert').hide();
+
+        //     });
+        // });
+
+        // $(document).ready(function () {
+        //     $('.btn_show').click(function () {
+        //         $('.alert').show();
+
+        //     });
+        // });
+
+        // // Auto-hide alert box
+        // $(document).ready(function () {
+        //     // show the alert
+        //     setTimeout(function () {
+        //         $(".alert").alert('close');
+        //     }, 10000);
+        // });
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <!-- <div class="alert alert-success alert-dissmissable text-center" style="width:200px; margin-top:20px; margin-left:20px;" id="alert">
+        <a href="#" class="close" data-dismiss="alert" area-label="close">&times;</a>
+        <strong>success</strong>
+
+    </div> -->
+
+
+
+
+    <input type="">
+    <div class="alert alert-success text-center" style="width:200px; margin-top:20px; margin-left:20px;" id="alert">
+        <!-- <a href="#" class="close" data-dissmiss="alert" area-label="close">&times;</a> -->
+        <button class="close" area-label="close" onclick="hide()">&times;</button>
+
+        <strong>success</strong>
+    </div>
+
+    <button class="btn_hide" onclick="hide()">Hide</button>
+    <button class="btn_show" onclick="show()">show</button>
+
+</body>
+
+</html>

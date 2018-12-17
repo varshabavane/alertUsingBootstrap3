@@ -55,8 +55,8 @@
 
     </div> -->
     <input type="">
-    <div class="alert alert-success text-center" style="width:200px; margin-top:20px; margin-left:20px;" id="alert">
-        <button href="#" class="close" area-label="close" onclick="hide()">&times;</button>
+    <div class="alert alert-success alert-dissmissable text-center" style="width:200px; margin-top:20px; margin-left:20px;" id="alert">
+        <a href="#" class="close" data-dismiss="alert" area-label="close">&times;</a>
         <strong>success</strong>
     </div>
 
